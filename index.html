@@ -6,7 +6,6 @@
 
   <title>Hearty: The best jobs come from trusted referrals</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-
   <meta name="description" content="Hearty is an invite-only network of the top talent in their field.">
   <meta name="author" content="SitePoint">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    <script>(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
@@ -31,7 +30,7 @@
       <div class='left'>
         <h2>The best jobs come from trusted referrals.</h2>
         <h4>Get recommended by your peers and be discovered on Hearty</h4>
-        <button class="btn primary">Request an invite</button>
+        <button onClick="showModal()" class="btn primary">Request an invite</button>
       </div>
       <div class='right'>
         <img src="./images/grouping.png" />
@@ -88,13 +87,34 @@
     </div>
   </div>
 
+
   <div class="footer">
     <div class="content container">
     <div class="left">
       <h3>If you’re ready to upgrade your network, we’d love to have you aboard.</h3>
-      <button class="btn primary">Request an invite</button>
+      <button onClick="showModal()" class="btn primary">Request an invite</button>
+    </div>
+    <div class="right">
+
+    </div>
+    <div class="bottom">
+      <p>© 2021 Referin Inc. All rights reserved.</p>
+      <div class="icons">
+        <a target="_blank" href="https://www.linkedin.com/company/be-hearty/"><img src="images/linkedin-icon.svg" /></a>
+        <a target="_blank" href="https://twitter.com/beheartyapp"><img src="images/twitter-icon.svg" /></a>
+        <a target="_blank" href="mailto:admins@behearty.co"><img src="images/email-icon.svg" /></a>
+      </div>
     </div>
   </div>
   </div>
+
+  <div id="modal" class="modal hidden">
+    <span onClick="showModal()">×</span>
+    <script type="text/javascript" src="https://form.jotform.com/jsform/210945819725060"></script>
+  </div>
+
+  <div onClick="showModal()" id="skrim" class='hidden'></div>
+  <script src="./app.js" type="text/javascript"></script>
+
 </body>
 </html>
