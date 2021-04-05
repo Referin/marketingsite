@@ -13,10 +13,6 @@ html {
     width:100%;
 }
 
-h1,h2,h3,h4,h5 {
-    font-weight:500;
-
-}
 
 * {
     box-sizing: border-box;
@@ -114,7 +110,6 @@ button:active, button:focus {
     letter-spacing: -1.5px;
     line-height: 70px;
     margin-bottom:15px;
-    font-weight:500;
 }
 
 .top .content h4 {
@@ -124,7 +119,6 @@ button:active, button:focus {
     letter-spacing: 0;
     margin-top:0;
     font-weight:500;
-
 }
 
 .top .content .left button {
