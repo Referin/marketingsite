@@ -232,7 +232,7 @@ nav img {
 
     .middle .story.one .right img {
         margin-left:70px;
-        margin-top:0;
+        margin-top:0 !important;
     }
 
     .middle .story.two .left img {
