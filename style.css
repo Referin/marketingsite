@@ -28,7 +28,8 @@ button:active, button:focus {
 }
 
 nav img {
-    max-width:150px;
+    width:150px;
+    height:49px;
 }
 
 @media (max-width: 900px) {
@@ -231,6 +232,7 @@ nav img {
 
     .middle .story.one .right img {
         margin-left:70px;
+        margin-top:0;
     }
 
     .middle .story.two .left img {
