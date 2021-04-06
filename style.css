@@ -213,6 +213,14 @@ nav img {
     width:45%;
 }
 
+.middle .story.three {
+    vertical-align: top;
+}
+
+.middle .story.three .right img {
+    margin-top: 90px;
+}
+
 @media only screen and (max-width: 600px) {
     .middle .story{
         flex-wrap: wrap;
@@ -289,7 +297,7 @@ nav img {
     padding-top:100px;
     background-repeat: no-repeat;
     background-position: top;
-    margin-top:80px;
+    margin-top:-70px;
 }
 
 .footer .bottom {
@@ -333,8 +341,17 @@ nav img {
         flex-direction: column-reverse;
     }
 
+    .middle .story.three .right img {
+        margin-top:0px;
+        margin-bottom:50px;
+    }
+
     .footer .content .left {
         width:100%;
+    }
+
+    .footer {
+        margin-top:100px;
     }
 }
 
