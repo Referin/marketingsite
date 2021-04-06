@@ -3,6 +3,7 @@ body {
     padding:0;
     box-sizing: border-box;
     width:100%;
+    border-top:3px solid #FF1F1F;
 }
 
 a {
