@@ -32,7 +32,7 @@
 
 <body>
   <div class="top">
-    <h2>Thanks for your response.<h2>
+  <h2 style='padding:20px'>Thanks for your response.<h2>
   </div>
 
 
