@@ -357,7 +357,7 @@ nav img {
 }
 
 .modal {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     max-width: 400px;
@@ -368,13 +368,13 @@ nav img {
     top: 100px;
     box-shadow:0px 0px 20px rgba(0,0,0,.5);
     z-index:100;
-    height:400px;
+    height:648px;
 }
 
 .modal iframe {
     min-width: 100% !important;
     display: block !important;
-    overflow: hidden;
+    overflow: scroll;
     border: none;
     height: 0px;
     width: 100% !important;
