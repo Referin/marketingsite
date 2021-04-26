@@ -409,3 +409,22 @@ nav img {
 .hidden {
     display:none;
 }
+
+.footer .right {
+    padding-left:40px;
+}
+
+.footer .left h2 {
+    font-size:15px;
+    color:#f0f1f3;
+    font-family: "Nunito";
+    font-weight:400;
+    padding-left:10px;
+    margin-top:60px;
+    margin-bottom:0;
+
+}
+
+.pressIcons img {
+    max-width:400px;
+}
