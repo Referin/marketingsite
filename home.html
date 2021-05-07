@@ -50,7 +50,7 @@
       <div class='left'>
         <h2>The best jobs come from trusted referrals.</h2>
         <h4>Get recommended by your peers and be discovered on Hearty</h4>
-        <a href="/#form" class="btn primary">Request an invite</a>
+        <a href="/#form" class="btn primary">Join Hearty</a>
       </div>
       <div class='right'>
         <img src="./images/grouping.png" />
@@ -119,7 +119,17 @@
       </div>
     </div>
     <div id="form" class="right">
-      <script type="text/javascript" src="https://form.jotform.com/jsform/210945819725060"></script>
+      <form onsubmit="checkEligibility(event)">
+        <div id="checking">Checking...</div>
+        <div id="verified">Verified! Redirecting to registration</div>
+        <div id="invalid">Not a valid email. Please enter a valid email.</div>
+
+        <h3>Registration Check</h3>
+        <p>Hearty is an invite-only network. Let us run a quick check to see if other members of your network are here, and if not we’ll add you to our waitlist.</p>
+        <label>Email</label>
+        <input id="li" type="text">
+        <button type="submit" class="btn primary fill">Registration Check</a>
+      </form>
     </div>
     <div class="bottom">
       <p>© 2021 Referin Inc. All rights reserved.</p>

@@ -57,6 +57,30 @@ nav img {
     cursor: pointer;
 }
 
+#checking, #verified, #invalid {
+    background-color:#08BDBD;
+    padding:10px 20px;
+    text-align: center;
+    color:#fff;
+    font-family: "Nunito";
+    border-radius:15px;
+    display:none;
+
+}
+
+.btn.primary.fill {
+    border: 2px solid #08BDBD;
+    border-radius: 5px;
+    font-family: Helvetica;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 0;
+    padding:10px 20px;
+    background-color:#08BDBD;
+    cursor: pointer;
+    margin-top:20px;
+}
+
 .btn.primary:hover {
     border: 2px solid #08BDBD;
     border-radius: 5px;
@@ -428,4 +452,33 @@ nav img {
 .pressIcons img {
     max-width: 400px;
     width: 100%;
+}
+
+#form.right h3, #form.right p {
+    color:#fff;
+    font-family: "Nunito";
+}
+
+#form.right h3 {
+    color:#fff;
+    font-family: "Nunito";
+    font-size:25px;
+}
+
+#form.right label {
+    color:#fff;
+    font-family: "Nunito";
+    width:100%;
+    display:block;
+    margin-top:35px;
+}
+
+#form.right input {
+    padding:10px 10px;
+    font-family: "Nunito";
+    width:100%;
+    display:block;
+    border-radius: 10px;
+    border:2px solid #fff;
+    margin-top:10px;
 }
