@@ -198,6 +198,8 @@ nav img {
     line-height: 70px;
     margin:0;
     padding:0;
+    margin-bottom:30px;
+
 }
 
 .top .content h4 {
@@ -207,6 +209,7 @@ nav img {
     letter-spacing: 0;
     margin-top:0;
     font-weight:500;
+    margin-bottom:50px;
 }
 
 .top .content .left button {
@@ -216,13 +219,20 @@ nav img {
 }
 
 .top .content div {
-    width:40%;
+    width:30%;
+}
+
+.top .content .left {
+    width:60%;
 }
 
 
 @media (max-width: 900px) {
     .top .content {
         flex-wrap: wrap;
+    }
+    .top .content .left {
+        width:100%;
     }
     .top .content div {
         width:100%;
@@ -307,7 +317,7 @@ nav .menu a img{
 }
 
 .top .logos {
-    margin-top:90px
+    margin-top:20px
 }
 
 .top .logos .allLogos {
