@@ -14,6 +14,10 @@ html {
     width:100%;
 }
 
+.footer .container {
+    padding-bottom:0;
+}
+
 
 * {
     box-sizing: border-box;
@@ -26,6 +30,7 @@ button:active, button:focus {
 .container {
     max-width: 1280px;
     margin:0px auto;
+    padding-bottom:100px;
 }
 
 nav img {
@@ -135,6 +140,54 @@ nav img {
     padding-top:20px;
     display:flex;
     justify-content: space-between;
+    padding-bottom:0;
+}
+
+.top .dots {
+    position: relative;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(238,234,243,1) 14%);
+}
+
+.top .dots .content {
+}
+
+.dotsImage {
+    position: absolute;
+    right: 0;
+    top:-300px;
+    max-width:600px;
+    object-fit: contain;
+    transform: rotate(180deg);
+    z-index: 0;
+}
+
+
+.top .content.fullwidth {
+    max-width: 100%;
+}
+
+.top .content .center {
+    width:100%;
+    margin:0px auto;
+    padding-top:20px;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding:60px 0px;
+
+}
+
+.top .content .center img{
+    height:80px;
+    width:auto;
+}
+
+.top .content .center h2 {
+    padding-top:20px;
+    display:flex;
+    justify-content: space-between;
 }
 
 .top .content h2 {
@@ -143,7 +196,8 @@ nav img {
     color: #000807;
     letter-spacing: -1.5px;
     line-height: 70px;
-    margin-bottom:15px;
+    margin:0;
+    padding:0;
 }
 
 .top .content h4 {
@@ -197,6 +251,59 @@ nav img {
         display: block;
         margin-top:40px;
     }
+}
+
+nav .menu {
+    background-color:#484D6D;
+    height:2em;
+    display:flex;
+    border-radius: 15px;
+    align-items: center;
+    align-content: center;
+    padding-left:20px;
+    position: relative;
+    z-index:20;
+}
+
+nav .menu img{
+    height:1.2em;
+    width:auto;
+}
+
+nav .menu a.android img{
+    margin-left:50px;
+    margin-right:5px;
+}
+
+nav .menu .btn{
+    background-color:#fff;
+    border:2px  solid #484D6D;
+    height:2.4em;
+    border-radius: 15px;
+    color:#484D6D;
+    margin-left:20px;
+    padding-bottom:5px;
+    line-height: 1em;
+}
+
+nav .menu .btn:hover{
+    background-color:#06BDBD;
+    border:2px  solid #484D6D;
+    height:2.4em;
+    border-radius: 15px;
+    color:#fff;
+    margin-left:20px;
+}
+
+nav .menu a{
+    color:#fff;
+    font-family: 'Nunito';
+    height:1.35em;
+    font-size:13px;
+}
+
+nav .menu a img{
+    margin-bottom:-2px;
 }
 
 .top .logos {
@@ -265,7 +372,6 @@ nav img {
 
     .middle .story.one .right img {
         margin-left:70px;
-        margin-top:0 !important;
     }
 
     .middle .story.two .left img {
@@ -296,6 +402,17 @@ nav img {
     font-weight:600;
 }
 
+.middle .story p {
+    font-family: "Nunito";
+    font-size: 20px;
+    color: #000807;
+    letter-spacing: -0.5px;
+    margin:0;
+    padding:0;
+    margin-top:10px;
+    font-weight:300;
+}
+
 .middle .story.one .right img{
     margin-top:-100px;
 }
@@ -312,8 +429,12 @@ nav img {
 }
 
 .middle .story.three {
-    max-width:900px;
     margin:0px auto;
+}
+
+.middle .story.three .right img {
+    width:100%;
+    max-width:100% !important;
 }
 
 .footer {
@@ -329,10 +450,15 @@ nav img {
 .footer .container {
     display:flex;
     flex-wrap: wrap;
+    width:100%;
 }
 
 .footer .container .left{
-    width:45%;
+    width:100%;
+}
+
+.footer .container .left h3{
+    text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
@@ -369,6 +495,10 @@ nav img {
     margin-left:20px;
 }
 
+.footer .bottom .icons .appstore {
+    max-width:150px;
+}
+
 
 .footer .content .left h3 {
     font-family: "Nunito";
@@ -376,13 +506,22 @@ nav img {
     color: #FFFFFF;
     letter-spacing: -0.5px;
     line-height: 46px;
-}
-
-.footer .content .left {
-    width:45%;
+    max-width:600px;
+    margin:0px auto;
+    display:block;
 }
 
 .footer .content .left button {
+    margin:0px auto;
+    display:block;
+    margin-top:30px;
+}
+
+.footer .content .left {
+    width:100%;
+}
+
+.footer .content .left a.btn {
     background: #08BDBD;
     box-shadow: 1px 1px 10px 0 rgba(0,0,0,0.10);
     border-radius: 5px;
@@ -390,24 +529,112 @@ nav img {
     font-size: 16px;
     color: #FFFFFF;
     letter-spacing: 0;
+    display:block;
+    margin:0px auto;
+    width:130px;
+    margin-top:20px;
 }
 
 @media only screen and (max-width: 600px) {
-    .middle .story.one, .middle .story.three {
-        flex-direction: column-reverse;
+    .middle .story{
+        flex-wrap: wrap;
     }
-
-    .middle .story.three .right img {
-        margin-top:0px;
-        margin-bottom:50px;
-    }
-
-    .footer .content .left {
+    .middle .story > div {
         width:100%;
     }
 
-    .footer {
-        margin-top:100px;
+    .middle .story.two {
+        flex-direction: column-reverse;
+    }
+
+    .top .content h2 {
+        font-size:30px;
+        line-height:35px;
+    }
+
+    .story.one .right img {
+        max-width:100% !important;
+        float:none !important;
+        margin:20px auto;
+        margin-top:50px !important;
+    }
+
+    .top nav {
+        flex-wrap:wrap;
+    }
+
+    .top .content .center {
+        padding:0px 0px;
+    }
+
+    .top nav .menu {
+        margin:0px auto;
+        margin-top:20px;
+    }
+
+    .middle .story h3 {
+        font-size: 22px !important;
+    line-height: 24px !important;
+    }
+
+    .logos .allLogos img {
+        flex-wrap: nowrap;
+        margin-right:10px !important;
+        margin-left:10px !important;
+    }
+    .middle {
+        overflow: hidden;
+    }
+
+    .middle .story.one .right img {
+        margin-left:0px;
+    }
+
+    .middle .story.two .left img {
+        margin-left:0px;
+    }
+
+    footer .content {
+        width:100% !important;
+        padding:0 !important;
+    }
+
+    footer .content .faq{
+        width:100% !important;
+        max-width: 100%;
+    }
+
+    footer .content .faq h4{
+        margin-right:0;
+        padding-right:0;
+    }
+
+    footer .content .faq p{
+        display:block !important;
+    }
+
+    .footer .bottom {
+        flex-wrap:wrap;
+    }
+
+    .footer .bottom .icons{
+        width:100%;
+    }
+
+    .top .content .center h2{
+        font-size:26px;
+    }
+
+    .top .content .center img{
+        height:40px;
+        margin-right:10px;
+    }
+
+    .footer .bottom .icons .appstore {
+        max-width: 150px;
+    margin: 0px auto;
+    display: block;
+    margin-bottom:20px;
     }
 }
 
