@@ -112,7 +112,7 @@ nav img {
     padding-top:20px;
     display:flex;
     justify-content: space-between;
-    margin-bottom:20px;
+    margin-bottom:60px;
 }
 
 @media (max-width: 900px) {
@@ -242,8 +242,9 @@ nav img {
 
 
 .top .content .right img {
-    max-width:80%;
+    max-width:100%;
     float:right;
+    margin-top:-70px;
 }
 
 @media (max-width: 900px) {
@@ -317,7 +318,7 @@ nav .menu a img{
 }
 
 .top .logos {
-    margin-top:20px
+    margin-top:-30px
 }
 
 .top .logos .allLogos {
@@ -370,6 +371,11 @@ nav .menu a img{
     .middle .story > div {
         width:100%;
     }
+
+
+.top .logos {
+    margin-top:0px
+}
 
     .logos .allLogos img {
         flex-wrap: nowrap;
