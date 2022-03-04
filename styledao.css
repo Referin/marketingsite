@@ -53,18 +53,18 @@ nav img {
 
 
 nav h3 {
-    font-size:45px;
+    font-size:50px;
     text-align: center;
-    margin-top:50px;
-    font-weight:400;
+    margin-top:93px;
+    font-weight:200;
     font-family: din-2014, sans-serif;
-
+    letter-spacing: 4px;
 }
 
 .middle {
     background-color:#000;
     padding:70px 40px;
-    padding-bottom:60px;
+    padding-bottom:120px;
     color:#fff;
 }
 
@@ -107,12 +107,13 @@ nav h3 {
     font-weight:400;
     padding:0;
     margin:0;
-    padding-bottom: 70px;
+    padding-bottom: 90px;
+    padding-top:30px;
 
 }
 
 .middle .container > div h4 {
-    font-size:33px;
+    font-size:36px;
     display:inline-block;
     width: calc(100% - 75px);
     padding:0;
@@ -121,7 +122,7 @@ nav h3 {
 }
 
 .bottom {
-    margin:80px 0px;
+    margin:155px 0px;
 }
 
 .bottom a {
@@ -157,9 +158,9 @@ nav h3 {
     font-weight: 300;
     font-style: normal;
     line-height: 1.4em;
-    margin-top:40px;
+    margin-top:70px;
     opacity:.75;
-    font-size:20px;
+    font-size:26px;
 }
 
 @media (max-width: 900px) {
