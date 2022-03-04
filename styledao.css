@@ -166,6 +166,21 @@ nav h3 {
     .container {
         padding:0px 20px;
     }
+
+    .middle .container > div {
+        width:100%;
+        margin-bottom:90px;
+    }
+
+    .middle .container > div h4 {
+        width:100%;
+        margin-top:10px;
+        text-align: center;
+    }
+
+    .middle .container > div span {
+        margin:0px auto;
+    }
 }
 
 .top nav a {
@@ -346,6 +361,7 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(241,236,245,1) 
         width:100%;
     }
     
+    
 }
 
 
@@ -475,6 +491,7 @@ nav .menu a img{
     .middle .story{
         flex-wrap: wrap;
     }
+    
     .middle .story > div {
         width:100%;
     }
