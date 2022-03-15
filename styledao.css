@@ -938,8 +938,8 @@ footer .content h3{
 }
 
 .middle.company .container {
-    width:70%;
-    margin-left:15%;
+    width:50%;
+    margin-left:25%;
     border-left:4px solid black;
     padding-left:70px;
     padding-bottom:0;
@@ -951,13 +951,13 @@ footer .content h3{
 
 .middle.company > h2{
     font-size:26px;
-    font-size: 60px;
+    font-size: 46px;
     font-weight: 300;
     padding: 0;
     margin: 0;
     padding-bottom: 50px;
     padding-top: 30px;
-    margin-left:15%;
+    margin-left:25%;
     font-family: din-2014, sans-serif;
     color:#191919;
 }
