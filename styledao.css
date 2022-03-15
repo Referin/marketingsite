@@ -243,7 +243,7 @@ nav h3 {
 }
 
 .top nav {
-    max-width:1280px;
+    max-width:1080px;
     margin:0px auto;
     display:flex;
     flex-direction: column;
@@ -898,4 +898,103 @@ footer .content h3{
     border-radius: 10px;
     border:2px solid #fff;
     margin-top:10px;
+}
+
+
+.middle.company {
+    background-color: transparent;
+    color:#000;
+    padding-bottom:50px;
+}
+
+
+.middle.company .container .point > span {
+    border: 2px solid #fff;
+    border-radius: 100%;
+    width: 43px;
+    height: 40px;
+    display: inline-block;
+    /* padding-top: 4px; */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-right:30px;
+    background-color:#56BABC;
+    color:#fff;
+    margin-bottom:15px;
+}
+
+.middle.company .container .point {
+    margin-top:50px;
+}
+
+.middle.company .container .point p{
+    margin-top:20px;
+}
+
+.middle.company .container h2{
+    text-align:left;
+    padding-bottom:10px;
+}
+
+.middle.company .container {
+    width:70%;
+    margin-left:15%;
+    border-left:4px solid black;
+    padding-left:70px;
+    padding-bottom:0;
+}
+
+.middle.company .container .left{
+    width:100%;
+}
+
+.middle.company > h2{
+    font-size:26px;
+    font-size: 60px;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    margin-left:15%;
+    font-family: din-2014, sans-serif;
+    color:#191919;
+}
+
+.bottom.company {
+    margin-top:120px;
+}
+
+.companyFooter p{
+    color:#fff;
+    display:inline;
+}
+
+.companyFooter {
+    background-color:#000;
+    display:flex;
+}
+
+.companyFooter .container {
+    justify-content: center;
+    padding-top:60px;
+    align-items: center;
+    padding-bottom:50px;
+    display:flex;
+}
+
+.companyFooter img{
+    max-width:120px;
+    margin-left:10px;
+}
+
+.companyFooter p{
+    font-size:24px;
+    font-weight:300;
+    font-family: din-2014, sans-serif;
+    opacity:.8;
+    display: inline-block;
+    padding:0;
+    margin:0;
 }
