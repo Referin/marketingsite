@@ -429,8 +429,13 @@ nav .menu a img{
     font-weight:300;
 }
 
+.middle .story.one{
+    margin-top:50px;
+    margin-bottom:120px;
+}
+
 .middle .story.one .right img{
-    margin-top:-100px;
+    margin-top:60px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -446,11 +451,28 @@ nav .menu a img{
 
 .middle .story.three {
     margin:0px auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.middle .story.two {
+    margin:0px auto;
+    display:flex;
+    align-items: center;
+    margin-bottom:40px;
 }
 
 .middle .story.three .right img {
     width:100%;
-    max-width:100% !important;
+    max-width:350px !important;
+}
+
+.middle .story.three .right {
+    width:100%;
+    max-width:350px !important;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .footer {
