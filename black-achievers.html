@@ -23,7 +23,8 @@
       mixpanel.init("da4914e42433bbd93fe0ddee5422561f", {batch_requests: true})</script>
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/our-story.css">
+    <link rel="stylesheet" href="./css/black-achievers.css">
+    <link rel="stylesheet" href="./css/contact-modal.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -45,48 +46,53 @@
 
   <body>
     <div class="header">
-      <!-- <nav> -->
-        <img src="./images/collective.png" />
-        <div class="menu">
-          <a href="https://www.hearty.xyz/collectives">Collectives</a>
-          <a href="https://www.hearty.xyz/black-achievers">Black Achievers</a>
-        </div>
-      <!-- </nav> -->
+        <img src="./images/collective.png" class="collectives-logo"/>
+        <div class="vertical-line"></div>
+        <img src="./images/ba/ba-logo.png" class="ba-logo"/>
     </div>
 
-    <div class="title container">
-        <div class="left">
+    <div class="story container">
+        <div class="full">
             <div class="line"></div>
-            <h1>Our Story</h1>
+            <h2>Our Story</h2>
+            <p>Black Achievers is the first community to create a Hearty Collective. In fact, our teams worked together to build this platform in early 2023. We're excited to connect Black Achievers members and introduce them to companies that are investing in the careers of black professionals. Read our full story <a href="https://www.hearty.xyz/our-story">here.</a></p>
+            <div class="btn-container">
+                <a class="btn sign-up" onclick="showModal()">Sign Up Now</a>
+            </div>
         </div>
     </div>
 
-    <div class="top container">
+    <div class="discover container">
       <div class='left'>
-        <p>Hearty Collectives is a partnership between two organizations whose founders share a life-long passion for unearthing under-appreciated talent.</p>
-        <p><a href="https://www.linkedin.com/in/mrmichaelmoore/" target="_blank">Michael Moore</a> founded Black Achievers in Cincinnati in 2018. After years as a software entrepreneur, he took an IT leadership role at a large company and saw a need to connect with fellow black professionals. He brought a startup mentality to the challenge and created an organization now the nation’s largest network of black professionals.</p>
-        <p><a href="https://www.linkedin.com/in/bobgilbreath/" target="_blank">Bob Gilbreath</a> co-founded Hearty in Cincinnati in 2020. Bob completed the <a href="https://www.businesswire.com/news/home/20180601005270/en/Quotient-Technology-Signs-Definitive-Agreement-to-Acquire-Ahalogy" target="_blank">successful sale</a> of his previous software startup weeks before COVID hit. Then he and his team decided to start up again with Hearty, a platform designed to tap member networks to share professional opportunities.</p>
-        <p>In the Fall of 2022, Michael sought a software solution to help his corporate partners connect with Black Achievers members. Bob was looking for ways to bring the Hearty software platform to a larger network.</p>
-        <p class="bold">But they almost never got together–which illustrates both the problem and our solution.</p>
+        <div class="line"></div>
+            <h2>Discover and meet other members</h2>
+            <p>Black Achievers now spans 12 markets and over 100,000 national members. With its Hearty Collective, you can search the community and meet virtually with like-minded professionals.</p>
       </div>
       <div class='right'>
-        <img src="./images/ba/michael-moore.png" class="michael"/>
+        <img src="./images/ba/michael-moore-modal.png"/>
       </div>
     </div>
 
-    <div class="bottom container">
-        <div class="left">
-            <img class="bob" src="./images/ba/bob-gilbreath.png">
+    <div class="network container">
+        <div class='left'>
+          <div class="line"></div>
+              <h2>Network with execs from top companies</h2>
+              <p>Hearty partners with some of the largest companies in the world. Senior Leaders of those companies have joined Black Achievers as community allies, and they've made time available to meet with our members.</p>
         </div>
-      <div class="right">
-        <p>Despite both leaders living in the same, medium-sized city for over 20 years–and being part of a fairly small group of software entrepreneurs– Bob and Michael had never met.</p>
-        <p>They lived and worked in different networks, which might as well be different worlds.</p>
-        <p>Until they were brought together by <a href="https://www.linkedin.com/in/consumergeneratedmedia/" target="_blank">Pete Blackshaw</a>, an Ally within the startup ecosystem focused on supporting under-represented founders.</p>
-        <p>Thanks to Pete’s introduction, Bob and Michael finally met–and hit it off. Each saw synergy in the other’s organizations, along with a shared personal mission to make a positive impact on people’s lives. Their teams joined up to design the Hearty Collectives platform.</p>
-        <p>Companies have struggled for decades to create diverse, inclusive teams that represent the world we live in. When 85% of people find their jobs based on “Who they know”--mostly current employees–diverse candidates miss out on network benefits.</p>
-        <p>Hearty Collectives helps companies bridge these network gaps by bringing company leaders and diverse community members together.</p>
-        <p>We are excited to deliver on the promise of diverse, equitable, and inclusive teams.</p>
-      </div>
+        <div class='right'>
+          <img src="./images/ba/ally-meeting-image.png"/>
+        </div>
+    </div>
+
+    <div class="connected container">
+        <div class='left'>
+          <div class="line"></div>
+              <h2>Get connected to top tier opportunities</h2>
+              <p>Our network events bring together fellow black professionals and feature inspiring speakers. And because they are virtual we make access easier or everyone.</p>
+        </div>
+        <div class='right'>
+          <img src="./images/ba/zoom2.png"/>
+        </div>
     </div>
 
     <div class="footer">
@@ -94,6 +100,20 @@
         <a style="margin-left:10px;color:black;text-decoration: underline;" href="https://app.behearty.co/privacy">Privacy Policy</a>
       </p>
     </div>
+
+    <div id="modal" class="hidden">
+        <form onsubmit="">
+          <p>We can’t wait to speak with you. Leave us your contact info and we’ll be in touch shortly.</p>
+          <div><input type="text" name="name" placeholder="Name" required /></div>
+          <div><input type="email" name="email" placeholder="Email" required /></div>
+          <div><input type="text" name="company" placeholder="Company" required /></div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div id="skrim" class="hidden" onclick="showModal()"></div>
+  
+  
+      <script src="./app.js" type="text/javascript"></script>
 
   </body>
 </html>

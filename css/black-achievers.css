@@ -1,0 +1,174 @@
+body {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header {
+    height: 300px;
+    margin: -10px -10px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content {
+    position: relative;
+}
+
+.header::before {
+    /* margin: -10px -10px; */
+    content: "";
+    background-image: url(../images/ba/hero-background.png);
+    height: 300px;
+    /* width: 100%; */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+
+.ba-logo {
+    width: 400px;
+    position: relative;
+}
+
+.collectives-logo {
+    width: 300px;
+    position: relative;
+}
+
+h1 {
+    margin-top: 0px;
+    font-size: 5em;
+    font-weight: 800;
+    line-height: 0.9;
+}
+
+h2 {
+    margin-top: 0px;
+    font-size: 4em;
+}
+
+h3 {
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 0.9;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 100px 20px;
+}
+
+.left {
+    min-width: 300px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.right {
+    min-width: 300px;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.full {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.discover img {
+    max-width: 400px;
+}
+
+.network img, .connected img {
+    max-width: 500px;
+}
+
+.btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sign-up {
+    display: block;
+    margin-top: 20px;
+    color: black;
+    background-color: rgb(255, 187, 0);
+    border-radius: 25px;
+    padding: 15px 25px;
+    font-size: 1.5em;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.footer p {
+    font-size: 1em;
+}
+
+.line {
+    border-bottom: 5px solid #000000;
+    width: 130px;
+    margin-bottom: 10px;
+}
+
+.vertical-line {
+    border-left: 3px solid #000000;
+    height: 100px;
+    margin-left: 25px;
+}
+
+@media (max-width: 1000px) {
+    body {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .header {
+        margin: 0px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .top .left {
+        margin-left: 20px;
+    }
+
+    .left, .right, .full {
+        width: 100%;
+        margin: 0px 0px;
+        align-items: center;
+    }
+
+    .vertical-line {
+        display: none;
+    }
+
+}
