@@ -9,6 +9,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
+    font-family: "Montserrat";
 }
 
 h1 {
@@ -16,6 +17,7 @@ h1 {
     font-size: 5em;
     font-weight: 800;
     line-height: 0.9;
+    font-family: "Montserrat";
 }
 
 h2 {

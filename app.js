@@ -1,10 +1,33 @@
 const showModal = ()=>{
-        const modal = document.getElementById('modal')
+        const modal = document.getElementById('modal');
         modal.classList.toggle("hidden");
 
-        const skrim = document.getElementById('skrim')
+        const skrim = document.getElementById('skrim');
         skrim.classList.toggle("hidden");
     
+}
+
+const submitContact = ()=>{
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const company = document.getElementById('company').value;
+
+        const data = {
+                name,
+                email,
+                company
+        }
+
+        const url = "https://api.hearty.xyz/contact-us";
+
+        fetch(url, {
+                method: "POST",
+                headers: {
+                        "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
+        })
+        .then(showModal());
 }
 
 const checkEligibility = (e)=>{

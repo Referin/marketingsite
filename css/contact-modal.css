@@ -48,6 +48,7 @@
     color: black;
     font-size: 1em;
     cursor: pointer;
+    font-family: "Montserrat";
 }
 
 #modal form p {
