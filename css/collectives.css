@@ -59,7 +59,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 100px 20px;
+    margin: 100px 40px;
 }
 
 .left {
@@ -94,7 +94,7 @@ img.search {
 
 .search-right {
     overflow: hidden;
-    margin-right: -30px;
+    margin-right: -50px;
 }
 
 .get-connected {
@@ -195,7 +195,10 @@ p.companies {
 
 .intro, .zoom, .meeting {
     align-items: normal;
-    justify-content: space-around;
+}
+
+.intro-right {
+    flex-grow: 2;
 }
 
 .header img {
