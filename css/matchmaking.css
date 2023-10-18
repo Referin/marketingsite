@@ -4,8 +4,8 @@
 
 body {
     font-family: Montserrat;
-    /* width: 100vw; */
-    margin-right: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .top {
@@ -14,8 +14,7 @@ body {
     background-size: cover;
     background-position: center;
     min-height: 1000px;
-    width: 100%;
-    margin: -20px;
+    margin-left: -20px;
     color: white;
     text-align: center;
 }
@@ -33,35 +32,54 @@ nav {
 }
 
 .matchmaking-logo {
+    margin-top: 20px;
     width: 250px;
 }
 
 .collectives-link {
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.3rem;
     font-weight: 500;
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 6rem;
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 4rem;
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 2.5rem;
 }
 
 .container {
-    margin: 20px;
+    /* margin: 20px; */
 }
 
 .content {
     padding-top: 100px;
+    padding-bottom: 50px;
     height: 100%;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+@media screen and (max-width: 1200px) {
+    .content {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+.team {
+    padding: 20px;
+}
+
+.team-text {
+    padding-left: 40px;
 }
 
 .team-title {
@@ -112,8 +130,13 @@ p {
 
 .candidate, .video {
     display: flex;
-    justify-content: left;
+    justify-content: space-around;
     align-items: center;
+}
+
+.candidate > .shadow-box, .video > .shadow-box {
+    font-size: 1.2rem;
+    max-width: 200px;
 }
 
 .video {
@@ -172,10 +195,9 @@ p {
 .bottom {
     color: white;
     background-color: black;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     padding-bottom: 20px;
     margin-left: -10px;
-    /* margin-right: 0px; */
 }
 
 .inner-bottom {
@@ -183,8 +205,8 @@ p {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    /* margin-top: 20px; */
+    margin-bottom: 40px;
 }
 
 .cta {
@@ -198,11 +220,14 @@ p {
 .cta > a {
     color: white;
     text-decoration: none;
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 600;
 }
 
 .footer > p, .footer > p > a {
-    color: black;
-    font-size: smaller;
+    font-size: 0.75rem;
+}
+
+.footer {
+    padding-left: 10px;
 }
