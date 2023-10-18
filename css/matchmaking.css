@@ -56,11 +56,11 @@ p {
 }
 
 .content {
-    padding-top: 100px;
+    padding-top: 30px;
     padding-bottom: 50px;
     height: 100%;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 @media screen and (max-width: 1200px) {
